@@ -51,10 +51,18 @@
 <!-- Main Text -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-sm-12">
             <div id="content">
                 <h1>Assignments</h1>
                 <p><a class="btn btn-secondary btn-sm active" role="button" aria-pressed="true" id="custom-button" href="Week_02/calc.html">Calculator</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+          <div class="col-sm-12">
+            <div id="content">
+                <h1>Assignments</h1>
+                <p><a class="btn btn-secondary btn-sm active" role="button" aria-pressed="true" id="custom-button" href="Project%201/">Project One</a></p>
             </div>
         </div>
     </div>
