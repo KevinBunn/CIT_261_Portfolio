@@ -54,7 +54,7 @@
         <div class="col-lg-12">
             <div id="content">
                 <h1>Assignments</h1>
-                <p><a href="prove03/">Shopping Cart</a></p>
+                <p><a href="Week_02/">Calculator</a></p>
             </div>
         </div>
     </div>
