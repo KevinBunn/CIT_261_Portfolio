@@ -1,3 +1,6 @@
+debugger;
+
+
 const calculator = {
     number1: 0,
     number2: 0,
@@ -40,9 +43,9 @@ const calculator = {
         }
     },
     buttonClicked: function buttonClicked(button) {
-      console.log(button.innerHTML);
+      console.log(button.target.innerHTML);
 
-      switch (button.innerHTML) {
+      switch (button.target.innerHTML) {
         case 'M':
           break;
         case 'C':
@@ -61,7 +64,10 @@ const calculator = {
           break;
         default:
           //if it made it to here it's a number
-         this.inputOutput.value = this.inputOutput.value + button.innerHTML;
+         this.inputOutput.value = this.inputOutput.value + button.target.innerHTML;
       }
     }
 };
+
+const buttonContainer = document.querySelector(".calcButtons");
+buttonContainer.addEventListener('click', (event) => calculator.buttonClicked(event));

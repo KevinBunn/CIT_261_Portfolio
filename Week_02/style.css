@@ -23,5 +23,5 @@
   height: var(--buttonWidth);
 }
 button.span {
-  flex: 1 0 calc(var(--buttonWidth) * 1.4);
+  flex: 1 0 calc(var(--buttonWidth) * 1);
 }
