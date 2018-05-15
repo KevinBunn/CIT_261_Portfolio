@@ -54,7 +54,7 @@
         <div class="col-lg-12">
             <div id="content">
                 <h1>Assignments</h1>
-                <p><a class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" href="Week_02/calc.html">Calculator</a></p>
+                <p><a class="btn btn-secondary btn-sm active" role="button" aria-pressed="true" id="custom-button" href="Week_02/calc.html">Calculator</a></p>
             </div>
         </div>
     </div>
