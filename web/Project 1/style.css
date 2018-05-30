@@ -12,13 +12,51 @@ html {
   border: 1px solid black;
   display: flex;
   overflow-x: auto;
+  flex-flow: column;
 }
-.section {
-  height: 30vh;
+.tf-row {
+  flex: 1 0 auto;
+}
+.tf-month-row {
+  border: 1px solid black;
+  display: flex;
+}
+.tf-month-column {
+  background-color: blue;
+}
+.tf-month-column-text {
+  text-align: center;
+  font-size: 1.8em;
+}
+.tf-week-row {
+  display: flex;
+}
+.tf-week-column {
+  height: 8vh;
   background-color:aquamarine;
+  flex: 0 1 auto;
+}
+.tf-week-column-text{
+  text-align: center;
+  font-size: 1.5em;
 }
 .month-start {
   background-color: blueviolet;
+}
+.tf-task-row {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.tf-task-content-row {
+  height: 10vh;
+  border-top: 1px solid black;
+}
+.task-content {
+  height: 10vh;
+  width: 100px;
+  background-color: blue;
 }
 .row::after {
     content: "";
@@ -36,7 +74,7 @@ html {
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {
-    min-width: 400px;
+    min-width: 403px;
     flex: 1 0 auto
 }
 .col-5 {width: 41.66%;}
