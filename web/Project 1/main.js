@@ -1,9 +1,11 @@
 var taskRow = document.getElementsByClassName("tf-task-content-row");
 
 for (let taskContent of taskRow) {
-	taskContent.addEventListener("touchstart", function() {
-		if (!taskContent.contains(task)) {
+	taskContent.addEventListener("touchstart", function(event) {
+    let touches = event.touches;
+		if (!taskContent.querySelector('div')) {
 			let newContent = document.createElement('div');
+      newContent.style.marginLeft = Math.round((touches[0].pageX - 70)/101)*101;
 			newContent.className = "task-content";
 			taskContent.appendChild(newContent);
 		}
