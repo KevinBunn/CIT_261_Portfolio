@@ -54,9 +54,31 @@ html {
   border-top: 1px solid black;
 }
 .task-content {
+  display: flex;
   height: 10vh;
   width: 100px;
   background-color: blue;
+}
+.task-section-arrow-right {
+  width: 20%;
+  margin-left: 60%;
+  background-color: aqua;
+  height: 100%;
+  position: relative;
+}
+.task-section-arrow-left {
+  width: 20%;
+  background-color: aqua;
+  height: 100%;
+  position: relative;
+}
+[class*="task-arrow-"] {
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+}
+.task-arrow-right {
+  margin-left: 25%;
 }
 .row::after {
     content: "";
