@@ -1,0 +1,20 @@
+var addProject = document.getElementById("add-project");
+addProject.addEventListener("click", function(event) {
+   let newForm = document.createElement('form');
+    newForm.setAttribute("action", "add_project.php");
+    newForm.setAttribute("method", "post");
+    let newTextInput = document.createElement('input');
+    newTextInput.setAttribute("type", "text");
+    newTextInput.setAttribute("name", "project-name");
+    let newLabel = document.createElement('label');
+    newLabel.setAttribute("for","project-name");
+    newLabel.innerHTML = "Project Name:";
+    let newSubmit = document.createElement('input');
+    newSubmit.setAttribute("type","submit");
+    newSubmit.setAttribute("value", "add");
+    newForm.appendChild(newLabel);
+    newForm.appendChild(newTextInput);
+    newForm.appendChild(newSubmit);
+    event.target.parentElement.parentElement.appendChild(newForm);
+    event.target.parentElement.parentElement.removeChild(event.target.parentElement);
+});

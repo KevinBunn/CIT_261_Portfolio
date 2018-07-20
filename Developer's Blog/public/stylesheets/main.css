@@ -1,0 +1,258 @@
+@font-face {
+    font-family: GothamBlack;
+    src: url("/fonts/Gotham-Black.ttf");
+}
+@font-face {
+    font-family: GothamBlackItalic;
+    src: url("/fonts/Gotham-BlackItalic.ttf");
+}
+@font-face {
+    font-family: Heritage;
+    src: url("/fonts/Heritage Font.otf");
+}
+
+body {
+    background: url("/stylesheets/background-pattern.png");
+    background-color: #90d3ca;
+    background-size: 300px;
+    margin: 0px;
+    color: white;
+}
+
+.navbar-right {
+    margin-right: 10px;
+}
+
+.navbar-left {
+    margin-left: 10px;
+}
+
+#new-post-container {
+    display: none;
+}
+
+#show-new-post-button {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: aliceblue;
+    padding: 5px 10px 1px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-family: Heritage, sans-serif;
+    font-size: 2em;
+}
+
+.navbar-button {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-header {
+    margin-top: 30px;
+    text-align: center;
+}
+#gma-header-image {
+    width: 100px;
+    height: 100px;
+}
+#meo-header-image {
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+.signin-form {
+    display: flex;
+    margin: 10px 3em 50px;
+    z-index: 20;
+    font-family: GothamBlack, sans-serif;
+    justify-content: center;
+    background-color: #75cac1;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    border: #005f63 solid 1px;
+}
+#blog-title-grandma {
+    font-size: 4em;
+    font-family: Heritage, sans-serif;
+    margin-top: 3vh;
+}
+
+#blog-title-developer {
+    font-family: GothamBlackItalic, sans-serif;
+    font-size: 2em;
+    margin-top: -10px;
+}
+
+.blog-content {
+    /*max-width: 875px;*/
+    text-align: center;
+    margin: 10px 3em 50px;
+    z-index: 20;
+    font-family: GothamBlack, sans-serif;
+}
+
+.custom-input {
+    padding-left: 5px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.custom-button {
+    display: inline-block;
+    background: url("/stylesheets/button.png") no-repeat center center;
+    background-size: 100%;
+    padding: 10px;
+    min-width: 75px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.custom-button:hover, .custom-button:focus {
+    background: url("/stylesheets/button-hover.png") no-repeat center center;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.dropbtn {
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    min-width: 15px;
+}
+
+.dropbtn:hover, .dropbtn:focus, .dropdown-custom-button:hover, .dropdown-custom-button:focus, .navbar-button:hover, .navbar-button:focus {
+    text-decoration: underline;
+}
+
+.button-row {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content form{
+    margin-bottom: 0px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.blog-post {
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    border: #005f63 solid 1px;
+    background-color: #75cac1;
+    text-align: left;
+}
+
+.title {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.comment-count {
+    margin: 10px 0 10px;
+}
+
+.add-comment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.comment-header {
+    margin-bottom: -10px;
+    font-size: .7em;
+}
+
+.comment-content {
+    margin-top: 5px;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 900px) {
+    .blog-content {
+        max-width: 875px;
+        text-align: center;
+        margin: 10px auto 50px;
+        z-index: 20;
+        font-family: GothamBlack, sans-serif;
+    }
+
+    .blog-header {
+        align-items: center;
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #gma-header-image {
+        margin: 0 30px 0 0;
+        width: 250px;
+        height: 250px;
+    }
+
+    #meo-header-image {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin: 0 0 0 30px;
+    }
+    .blog-header-text {
+        font-size: 1.3em;
+    }
+
+    .signin-form {
+        max-width: 875px;
+        display: flex;
+        margin: 10px auto 50px;
+        z-index: 20;
+        font-family: GothamBlack, sans-serif;
+        justify-content: center;
+        background-color: #75cac1;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        border: #005f63 solid 1px;
+    }
+}
